@@ -1,12 +1,7 @@
-' Import necessary system libraries
-Imports System
-' Declare the module that contains the program
-Module Program
-    ' Main subroutine that is the entry point of the program
-    Sub Main(args As String())
-        ' Print "Hello World!" to the console
-        Console.WriteLine("Hello World!")
-        ' Print "+5" to the console
-        Console.WriteLine("+5")
-    End Sub
-End Module
+Imports System ' Imports the System namespace, making its public classes and members available.
+Module Program ' Declares the Program module.
+    Sub Main(args As String()) ' Declares the Main subroutine, the entry point of the program, which can accept command-line arguments.
+        Console.WriteLine("Hello World!") ' Outputs "Hello World!" to the console.
+        Console.WriteLine("+5") ' Outputs "+5" to the console.
+    End Sub ' Ends the Main subroutine.
+End Module ' Ends the Program module.

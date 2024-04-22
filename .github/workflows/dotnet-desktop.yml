@@ -1,4 +1,4 @@
-# DEMO
+# WIP
 name: .NET CLI App Build and Test
 on:
   push:
@@ -9,11 +9,9 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
-    - name: Set up .NET Core
-      run: |
-        choco install dotnetcore-sdk
-        dotnet --version
     - name: Restore dependencies
       run: dotnet restore
     - name: Build project
       run: dotnet build --configuration Release --no-restore
+    - name: Test project
+      run: dotnet test --no-restore --verbosity normal

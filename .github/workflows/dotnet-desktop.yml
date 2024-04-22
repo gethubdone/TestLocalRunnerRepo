@@ -16,4 +16,4 @@ jobs:
     - name: Test project
       run: dotnet test --no-restore --verbosity normal
     - name: Run application
-      run: dotnet C:\actions-runner\_work\TestLocalRunnerRepo\TestLocalRunnerRepo\bin\Release\net8.0\TestLocalRunnerRepo.exe
+      run: dotnet run
